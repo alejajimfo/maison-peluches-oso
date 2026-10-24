@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maison Peluches Oso · Peluches de lujo en Colombia</title>
+<meta name="description" content="Osos gigantes y personajes importados. Envíos a toda Colombia con Interrapidísimo. Pagas el envío y el peluche al recibir.">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#F8F1EA">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧸</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* =================== CONFIGURACIÓN RÁPIDA ===================
+   Cambia el número de WhatsApp en el bloque <script> (CONFIG)
+   ============================================================ */
+:root{
+  --cream:#F8F1EA; --ivory:#FFFBF7; --blush:#F1DADA; --rose:#C9919A; --rose-deep:#A86C77;
+  --gold:#B8935C; --gold-soft:#E4CFA8; --cocoa:#3D2A27; --muted:#7E6862; --line:#E9DCD2;
+  --shadow:0 18px 40px -22px rgba(61,42,39,.35);
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:"Jost",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--cocoa);font-family:var(--sans);font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* barra superior */
+.ribbon{background:var(--cocoa);color:var(--gold-soft);text-align:center;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding:9px 16px}
+header.top{position:sticky;top:0;z-index:40;background:rgba(248,241,234,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.logo{display:flex;align-items:baseline;gap:8px;text-decoration:none}
+.logo b{font-family:var(--serif);font-weight:500;font-size:1.75rem;letter-spacing:.02em}
+.logo i{font-family:var(--serif);color:var(--gold);font-size:1.1rem;letter-spacing:.04em}
+nav.menu{display:flex;gap:26px;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase}
+nav.menu a{text-decoration:none;opacity:.8}
+nav.menu a:hover{opacity:1;color:var(--rose-deep)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:none;cursor:pointer;border-radius:999px;padding:14px 28px;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;font-weight:400;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s}
+.btn-dark{background:var(--cocoa);color:var(--ivory)}
+.btn-dark:hover{background:#2a1c1a;transform:translateY(-1px);box-shadow:var(--shadow)}
+.btn-line{background:transparent;border:1px solid var(--cocoa);color:var(--cocoa)}
+.btn-line:hover{background:var(--cocoa);color:var(--ivory)}
+.btn-wa{background:#1F8F5F;color:#fff}
+.btn-wa:hover{background:#18764e}
+.top .btn{padding:10px 18px;font-size:.72rem}
+.logo{white-space:nowrap}
+@media (max-width:860px){nav.menu{display:none}}
+@media (max-width:480px){.logo b{font-size:1.4rem}.logo i{font-size:.9rem}.ribbon{font-size:.68rem;letter-spacing:.08em}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:84px 0 70px;background:
+  radial-gradient(1200px 500px at 85% 10%,rgba(241,218,218,.85),transparent 60%),
+  radial-gradient(700px 400px at 5% 90%,rgba(228,207,168,.45),transparent 60%),var(--cream)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.eyebrow{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.02;margin:16px 0 20px}
+.hero h1 em{color:var(--rose-deep);font-style:italic}
+.hero p.lead{font-size:1.08rem;color:var(--muted);max-width:30em}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.hero-art{position:relative;aspect-ratio:4/5;border-radius:220px 220px 26px 26px;background:linear-gradient(160deg,#fff 0%,var(--blush) 100%);box-shadow:var(--shadow);overflow:hidden;border:10px solid var(--ivory)}
+.hero-art img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s}
+.hero-art img.on{opacity:1}
+.hero-art .seal{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);background:rgba(255,251,247,.92);padding:10px 22px;border-radius:999px;font-family:var(--serif);font-style:italic;font-size:1.05rem;white-space:nowrap}
+@media (max-width:860px){.hero{padding:48px 0}.hero .wrap{grid-template-columns:1fr}.hero-art{max-width:360px;margin:0 auto;width:100%}}
+
+/* beneficios */
+.perks{background:var(--ivory);border-block:1px solid var(--line)}
+.perks .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.perk{padding:26px 18px;text-align:center;border-right:1px solid var(--line)}
+.perk:last-child{border-right:none}
+.perk .ic{font-size:1.4rem}
+.perk h4{font-family:var(--serif);font-weight:500;font-size:1.2rem;margin:6px 0 2px}
+.perk p{font-size:.85rem;color:var(--muted)}
+@media (max-width:860px){.perks .wrap{grid-template-columns:1fr 1fr}.perk:nth-child(2){border-right:none}.perk:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+
+/* secciones */
+section.block{padding:84px 0}
+.head{text-align:center;max-width:640px;margin:0 auto 46px}
+.head h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.1rem,4.4vw,3.2rem);line-height:1.08;margin:10px 0 12px}
+.head h2 em{font-style:italic;color:var(--rose-deep)}
+.head p{color:var(--muted)}
+.ornament{display:block;width:60px;height:1px;background:var(--gold);margin:18px auto 0;position:relative}
+.ornament:after{content:"✦";position:absolute;left:50%;top:50%;transform:translate(-50%,-55%);background:var(--cream);padding:0 8px;color:var(--gold);font-size:.7rem}
+
+/* tabla de precios */
+.prices{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;max-width:980px;margin:0 auto 26px}
+.price-chip{background:var(--ivory);border:1px solid var(--line);border-radius:18px;padding:16px 10px;text-align:center;cursor:pointer;transition:.2s}
+.price-chip:hover{border-color:var(--gold);transform:translateY(-2px)}
+.price-chip small{display:block;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.price-chip b{font-family:var(--serif);font-weight:500;font-size:1.45rem}
+
+/* pestañas de tallas */
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:6px 2px 14px;margin-bottom:28px;scrollbar-width:none;position:sticky;top:68px;z-index:20;background:linear-gradient(var(--cream) 80%,transparent)}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;border:1px solid var(--line);background:var(--ivory);border-radius:999px;padding:9px 18px;font-size:.8rem;letter-spacing:.08em;cursor:pointer;transition:.2s;white-space:nowrap}
+.tab.on,.tab:hover{background:var(--cocoa);color:var(--ivory);border-color:var(--cocoa)}
+
+.size-title{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding-bottom:12px;margin:46px 0 26px;scroll-margin-top:140px}
+.size-title h3{font-family:var(--serif);font-weight:400;font-size:2rem}
+.size-title h3 i{color:var(--gold)}
+.size-title span{font-family:var(--serif);font-size:1.4rem;color:var(--rose-deep)}
+
+/* tarjetas */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:26px}
+.card{background:var(--ivory);border-radius:26px;padding:12px;border:1px solid var(--line);transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.studio{position:relative;aspect-ratio:4/5;border-radius:18px;overflow:hidden;cursor:zoom-in;
+  background:radial-gradient(120% 90% at 50% 20%,#fff 0%,#F6ECE6 55%,#EAD9D2 100%)}
+.studio img{width:100%;height:100%;object-fit:cover;filter:saturate(1.05) contrast(1.03) brightness(1.03);transition:transform .6s}
+.card:hover .studio img{transform:scale(1.04)}
+.studio:after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 60px rgba(61,42,39,.12);border-radius:18px}
+.tag{position:absolute;top:12px;left:12px;z-index:2;background:rgba(255,251,247,.92);border-radius:999px;padding:5px 12px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase}
+.card .body{padding:16px 8px 6px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h4{font-family:var(--serif);font-weight:500;font-size:1.4rem;line-height:1.1}
+.card p.desc{font-size:.86rem;color:var(--muted)}
+.card .row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:12px}
+.price{font-family:var(--serif);font-size:1.5rem;font-weight:500}
+.price.ask{font-size:1.05rem;font-style:italic;color:var(--rose-deep)}
+.card .btn{padding:11px 18px;font-size:.72rem}
+
+.skeleton{background:linear-gradient(90deg,#efe4dc 0%,#f8f1ea 50%,#efe4dc 100%);background-size:200% 100%;animation:sh 1.4s infinite;border-radius:26px;aspect-ratio:4/6}
+@keyframes sh{to{background-position:-200% 0}}
+.notice{text-align:center;color:var(--muted);padding:30px;border:1px dashed var(--line);border-radius:20px;background:var(--ivory)}
+.more{display:flex;justify-content:center;margin-top:30px}
+
+/* cómo comprar */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.step{background:var(--ivory);border:1px solid var(--line);border-radius:24px;padding:28px 22px;position:relative}
+.step b{font-family:var(--serif);font-size:2.6rem;font-weight:400;color:var(--gold);line-height:1}
+.step h4{font-family:var(--serif);font-size:1.35rem;font-weight:500;margin:8px 0 6px}
+.step p{font-size:.88rem;color:var(--muted)}
+@media (max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+.ship{background:var(--cocoa);color:var(--ivory);border-radius:34px;padding:54px 46px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.ship h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,3.6vw,2.7rem);line-height:1.1}
+.ship h3 em{color:var(--gold-soft)}
+.ship ul{list-style:none;display:grid;gap:14px}
+.ship li{position:relative;padding-left:26px;font-size:.95rem}
+.ship li span{position:absolute;left:0;top:0;color:var(--gold-soft)}
+.paylist{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.paylist span{border:1px solid rgba(228,207,168,.5);color:var(--gold-soft);border-radius:999px;padding:6px 14px;font-size:.78rem;letter-spacing:.06em}
+.paybox{background:var(--ivory);color:var(--cocoa);border-radius:22px;padding:20px 22px;margin-top:22px;border:1px solid var(--gold-soft)}
+.paybox small{display:block;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.paybox .key{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:6px 0 4px}
+.paybox .key b{font-family:var(--serif);font-weight:500;font-size:2rem;letter-spacing:.02em}
+.paybox .copy{border:1px solid var(--cocoa);background:transparent;border-radius:999px;padding:6px 14px;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+.paybox .copy:hover{background:var(--cocoa);color:var(--ivory)}
+.paybox p{font-size:.85rem;color:var(--muted)}
+.terms .paybox{margin:12px 0 0;padding:14px 16px}
+.terms .paybox .key b{font-size:1.5rem}
+@media (max-width:860px){.ship{grid-template-columns:1fr;padding:36px 24px}}
+
+footer{padding:56px 0 40px;text-align:center;color:var(--muted);font-size:.85rem}
+footer .logo{justify-content:center;margin-bottom:10px}
+
+/* WhatsApp flotante */
+.fab{position:fixed;right:18px;bottom:18px;z-index:50;width:58px;height:58px;border-radius:50%;background:#1F8F5F;display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(0,0,0,.35);text-decoration:none}
+.fab svg{width:30px;height:30px;fill:#fff}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:100;display:none;align-items:flex-end;justify-content:center;background:rgba(40,26,24,.55);backdrop-filter:blur(4px)}
+.modal.open{display:flex}
+@media (min-width:760px){.modal{align-items:center;padding:24px}}
+.sheet{background:var(--ivory);width:100%;max-width:880px;max-height:94vh;overflow:auto;border-radius:30px 30px 0 0;display:grid;grid-template-columns:.85fr 1.15fr;animation:up .35s ease}
+@media (min-width:760px){.sheet{border-radius:30px}}
+@keyframes up{from{transform:translateY(40px);opacity:0}}
+.sheet .pic{background:radial-gradient(120% 90% at 50% 20%,#fff 0%,#F6ECE6 55%,#EAD9D2 100%);position:relative;min-height:260px}
+.sheet .pic img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.sheet .form{padding:30px 28px}
+.sheet h3{font-family:var(--serif);font-weight:400;font-size:2rem;line-height:1.1}
+.close{position:absolute;top:14px;right:14px;z-index:3;width:40px;height:40px;border-radius:50%;border:none;background:rgba(255,251,247,.92);cursor:pointer;font-size:1.2rem}
+@media (max-width:759px){.sheet{grid-template-columns:1fr}.sheet .pic{aspect-ratio:1/1;min-height:0}}
+.summary{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--cream);border-radius:16px;padding:14px 16px;margin:16px 0}
+.summary .price{font-size:1.6rem}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fields .full{grid-column:1/-1}
+label{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+input,select,textarea{width:100%;border:1px solid var(--line);background:#fff;border-radius:14px;padding:12px 14px;font-size:.95rem;outline:none;transition:border .2s}
+input:focus,select:focus,textarea:focus{border-color:var(--gold)}
+textarea{resize:vertical;min-height:70px}
+.pays{display:flex;flex-wrap:wrap;gap:8px}
+.pays label{margin:0;text-transform:none;letter-spacing:0;font-size:.9rem;color:var(--cocoa);border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 14px;cursor:pointer}
+.pays input{display:none}
+.pays input:checked+span{color:var(--rose-deep);font-weight:500}
+.pays label:has(input:checked){border-color:var(--rose-deep);background:#FBF0F0}
+.terms{background:#FBF0F0;border-radius:16px;padding:14px 16px;font-size:.86rem;margin:16px 0}
+.terms b{font-weight:500}
+@media (max-width:520px){.fields{grid-template-columns:1fr}}
+
+/* visor de foto */
+.viewer{position:fixed;inset:0;z-index:120;background:rgba(30,20,18,.9);display:none;align-items:center;justify-content:center;padding:20px}
+.viewer.open{display:flex}
+.viewer img{max-height:90vh;border-radius:16px}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Envíos a toda Colombia · Pagas tu peluche al recibir</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#inicio"><b>Maison</b><i>Peluches Oso</i></a>
+    <nav class="menu">
+      <a href="#osos">Osos gigantes</a>
+      <a href="#importados">Importados</a>
+      <a href="#como">Cómo comprar</a>
+      <a href="#envios">Envíos</a>
+    </nav>
+    <a class="btn btn-dark" href="#osos">Comprar</a>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Maison Peluches Oso · Colombia</span>
+      <h1>Abrazos gigantes,<br><em>amor hecho peluche.</em></h1>
+      <p class="lead">Osos de felpa hechos en Colombia, desde 40 cm hasta 2,40 m, y una colección de personajes importados. Elige el tuyo, déjanos tus datos y te lo enviamos a cualquier rincón del país.</p>
+      <div class="ctas">
+        <a class="btn btn-dark" href="#osos">Ver osos gigantes</a>
+        <a class="btn btn-line" href="#importados">Personajes importados</a>
+      </div>
+    </div>
+    <div class="hero-art" id="heroArt"><div class="seal">Desde $70.000</div></div>
+  </div>
+</section>
+
+<div class="perks">
+  <div class="wrap">
+    <div class="perk"><div class="ic">🚚</div><h4>Envío nacional</h4><p>Con Interrapidísimo a toda Colombia</p></div>
+    <div class="perk"><div class="ic">🤍</div><h4>Pagas al recibir</h4><p>Solo el envío se paga por adelantado</p></div>
+    <div class="perk"><div class="ic">🧸</div><h4>Hechos en Colombia</h4><p>Cualquier modelo en el tamaño que quieras</p></div>
+    <div class="perk"><div class="ic">💬</div><h4>Atención personal</h4><p>Confirmamos tu pedido por WhatsApp</p></div>
+  </div>
+</div>
+
+<!-- OSOS NACIONALES -->
+<section class="block" id="osos">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Colección Nacional</span>
+      <h2>Osos <em>gigantes</em></h2>
+      <p>Cada modelo se fabrica en el tamaño que elijas. Toca un tamaño para ver su precio y sus modelos.</p>
+      <span class="ornament"></span>
+    </div>
+    <div class="prices" id="priceChips"></div>
+    <div class="tabs" id="sizeTabs"></div>
+    <div id="nacionales"><div class="grid">
+      <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+    </div></div>
+  </div>
+</section>
+
+<!-- IMPORTADOS -->
+<section class="block" id="importados" style="background:var(--ivory);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Colección Importada</span>
+      <h2>Personajes <em>importados</em></h2>
+      <p>Los favoritos de siempre, suaves y llenos de detalle. Si el precio no aparece, te lo confirmamos al instante por WhatsApp según el tamaño.</p>
+      <span class="ornament"></span>
+    </div>
+    <div class="tabs" id="impTabs">
+      <button class="tab on" data-imp="all">Todos</button>
+      <button class="tab" data-imp="1">Colección I</button>
+      <button class="tab" data-imp="2">Colección II</button>
+    </div>
+    <div id="importadosGrid" class="grid">
+      <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+    </div>
+    <div class="more"><button class="btn btn-line" id="moreImp" hidden>Ver más personajes</button></div>
+  </div>
+</section>
+
+<!-- CÓMO COMPRAR -->
+<section class="block" id="como">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Así de fácil</span>
+      <h2>Cómo <em>comprar</em></h2>
+      <span class="ornament"></span>
+    </div>
+    <div class="steps">
+      <div class="step"><b>01</b><h4>Elige tu peluche</h4><p>Escoge el modelo y el tamaño que más te enamore.</p></div>
+      <div class="step"><b>02</b><h4>Déjanos tus datos</h4><p>Llena el formulario de envío y elige cómo pagarás el envío.</p></div>
+      <div class="step"><b>03</b><h4>Confirma por WhatsApp</h4><p>Tu pedido llega a nuestro WhatsApp y te enviamos los datos de pago del envío.</p></div>
+      <div class="step"><b>04</b><h4>Recíbelo y paga</h4><p>Interrapidísimo lo lleva a tu puerta y pagas el peluche al recibirlo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ENVÍOS -->
+<section class="block" id="envios" style="padding-top:0">
+  <div class="wrap">
+    <div class="ship">
+      <div>
+        <span class="eyebrow" style="color:var(--gold-soft)">Envíos nacionales</span>
+        <h3 style="margin-top:12px">Pagas el envío hoy,<br><em>y tu peluche al recibirlo.</em></h3>
+        <div class="paylist" id="payList"></div>
+        <div class="paybox">
+          <small>Paga el envío por Bre-B</small>
+          <div class="key"><b class="llave"></b><button type="button" class="copy" data-copy>Copiar llave</button></div>
+          <p>A nombre de <b class="titular"></b>. Paga desde Nequi, Daviplata, Bancolombia o cualquier banco y envíanos el comprobante por WhatsApp.</p>
+        </div>
+      </div>
+      <ul>
+        <li><span>✦</span>Enviamos a todos los departamentos de Colombia con <b>Interrapidísimo</b>.</li>
+        <li><span>✦</span>Por adelantado solo pagas el <b>valor del envío</b>. El valor del peluche lo pagas <b>contra entrega</b>.</li>
+        <li><span>✦</span>Te confirmamos el valor del envío según tu ciudad antes de despachar.</li>
+        <li><span>✦</span>Oso de 2,40 m: requiere un <b>abono de $50.000</b> por adelantado.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a class="logo" href="#inicio"><b>Maison</b><i>Peluches Oso</i></a>
+  <p>Peluches de lujo · Envíos a toda Colombia</p>
+  <p style="margin-top:6px">Precios en pesos colombianos (COP). Las fotos pueden variar levemente en tono.</p>
+</footer>
+
+<a class="fab" id="fab" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.4.7 4.7 2 6.7L3 29l7-2.2c1.9 1 4 1.6 6 1.6 7 0 12.7-5.6 12.7-12.5S23 3 16 3zm0 22.9c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.3 1.3-4-.3-.4a10.3 10.3 0 01-1.6-5.6C5.5 9.8 10.2 5.2 16 5.2s10.5 4.6 10.5 10.3S21.8 25.9 16 25.9zm5.8-7.7c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.6 8.6 0 01-4.3-3.7c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.7 1.2 3.2 1.4 3.4 2.4 3.6 5.8 5c2.2.9 3 1 4 .8.7-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5-.3-.2-.6-.4z"/></svg>
+</a>
+
+<!-- MODAL DE PEDIDO -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <div class="pic"><button class="close" id="mClose" aria-label="Cerrar">✕</button><img id="mImg" alt="" referrerpolicy="no-referrer"></div>
+    <form class="form" id="orderForm" novalidate>
+      <span class="eyebrow" id="mEyebrow">Tu pedido</span>
+      <h3 id="mTitle">Peluche</h3>
+      <div class="summary">
+        <div style="flex:1">
+          <label for="fSize">Tamaño</label>
+          <select id="fSize"></select>
+          <input id="fSizeFree" placeholder="Ej: 80 cm (opcional)" style="display:none">
+        </div>
+        <div style="text-align:right"><label>Valor</label><div class="price" id="mPrice">—</div></div>
+      </div>
+
+      <div class="fields">
+        <div class="full"><label for="fName">Nombre completo *</label><input id="fName" required autocomplete="name"></div>
+        <div><label for="fId">Cédula *</label><input id="fId" required inputmode="numeric"></div>
+        <div><label for="fPhone">Celular *</label><input id="fPhone" required inputmode="tel" autocomplete="tel" placeholder="3XX XXX XXXX"></div>
+        <div><label for="fDep">Departamento *</label><select id="fDep" required></select></div>
+        <div><label for="fCity">Ciudad / municipio *</label><input id="fCity" required></div>
+        <div class="full"><label for="fAddr">Dirección *</label><input id="fAddr" required autocomplete="street-address" placeholder="Calle, carrera, número, apto"></div>
+        <div><label for="fHood">Barrio</label><input id="fHood"></div>
+        <div><label for="fQty">Cantidad</label><input id="fQty" type="number" min="1" value="1"></div>
+        <div class="full"><label for="fNotes">Color, moño, dedicatoria u otra indicación</label><textarea id="fNotes" placeholder="Ej: oso color café con moño rojo, tarjeta que diga…"></textarea></div>
+        <div class="full"><label>¿Desde dónde pagarás el envío (Bre-B)? *</label><div class="pays" id="fPays"></div></div>
+      </div>
+
+      <div class="terms">
+        🚚 Envío con <b>Interrapidísimo</b> a toda Colombia.<br>
+        💳 Pagas <b>solo el valor del envío</b> por adelantado; el <b>valor del peluche lo pagas al recibir</b>. Te confirmamos el valor del envío por WhatsApp.
+        <div class="paybox">
+          <small>Paga el envío por Bre-B</small>
+          <div class="key"><b class="llave"></b><button type="button" class="copy" data-copy>Copiar llave</button></div>
+          <p>A nombre de <b class="titular"></b>. Paga desde Nequi, Daviplata, Bancolombia o cualquier banco y envíanos el comprobante por WhatsApp.</p>
+        </div>
+        <span id="mAbono"></span>
+      </div>
+      <button class="btn btn-wa" type="submit" style="width:100%">Enviar pedido por WhatsApp</button>
+      <p id="mErr" style="color:#b0414e;font-size:.85rem;margin-top:10px;display:none"></p>
+    </form>
+  </div>
+</div>
+
+<div class="viewer" id="viewer"><img id="vImg" alt="" referrerpolicy="no-referrer"></div>
+
+<script src="mis-peluches.js"></script>
+<script>
+/* ===================== CONFIGURACIÓN =====================
+   1) Pon aquí TU número de WhatsApp con indicativo 57, sin + ni espacios.
+   2) Ajusta los medios de pago del envío si cambian.
+   3) PRECIO_EXTRA es lo que se suma al precio sugerido de cada peluche.
+   ========================================================= */
+const CONFIG = {
+  whatsapp: "573132287350",
+  llaveBreB: "@3058780398",
+  titular: "María Castro",
+  metodosPago: ["Nequi", "Daviplata", "Bancolombia", "Otro banco"],
+  PRECIO_EXTRA: 5000
+};
+
+/* Precios sugeridos de osos nacionales (sin el extra) */
+const BASE = [
+  ["40 cm",40,65000],["60 cm",60,95000],["80 cm",80,138000],["1,10 m",110,167000],["1,25 m",125,190000],
+  ["1,50 m",150,215000],["1,80 m",180,250000],["2,10 m",210,315000],["2,40 m",240,445000]
+];
+const TALLAS = BASE.map(([t,cm,p]) => ({ t, cm, p: p + CONFIG.PRECIO_EXTRA }));
+
+const CATALOGOS = {
+  nacional: "https://sites.google.com/view/catalogopeluchesoso",
+  imp1: "https://sites.google.com/view/catalogoimportadosu/p%C3%A1gina-principal",
+  imp2: "https://sites.google.com/view/catalogopeluches"
+};
+
+const DEPTOS = ["Amazonas","Antioquia","Arauca","Atlántico","Bogotá D.C.","Bolívar","Boyacá","Caldas","Caquetá","Casanare","Cauca","Cesar","Chocó","Córdoba","Cundinamarca","Guainía","Guaviare","Huila","La Guajira","Magdalena","Meta","Nariño","Norte de Santander","Putumayo","Quindío","Risaralda","San Andrés y Providencia","Santander","Sucre","Tolima","Valle del Cauca","Vaupés","Vichada"];
+
+const DESCS = [
+  "Felpa suave y abrazable, perfecto para sorprender a quien más quieres.",
+  "Hecho en Colombia con acabados cuidados y una carita que enamora.",
+  "El regalo que no se olvida: grande, tierno y lleno de detalles.",
+  "Pelo sedoso y relleno esponjoso para abrazos de verdad.",
+  "Ideal para aniversarios, cumpleaños o simplemente porque sí.",
+  "Un clásico elegante que llena de ternura cualquier espacio."
+];
+
+/* ===================== utilidades ===================== */
+const $ = s => document.querySelector(s);
+const cop = n => "$" + Math.round(n).toLocaleString("es-CO");
+const waLink = txt => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(txt)}`;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function tallaDesdeTexto(txt){
+  const m = String(txt).replace(",", ".").match(/(\d+(?:\.\d+)?)\s*(cm|m\b|metro)/i);
+  if(!m) return null;
+  let v = parseFloat(m[1]);
+  if(/metro|^m$/i.test(m[2]) || v < 3) v = v * 100;   // "1.10 cm" en el catálogo significa 1,10 m
+  return Math.round(v);
+}
+function precioDesdeTexto(txt){
+  const m = String(txt).replace(/\./g,"").match(/(\d{2,3})\s*mil/i);
+  return m ? parseInt(m[1],10) * 1000 : null;
+}
+function nombreTalla(cm){
+  const t = TALLAS.find(x => x.cm === cm);
+  if(t) return t.t;
+  return cm >= 100 ? (cm/100).toFixed(2).replace(".", ",") + " m" : cm + " cm";
+}
+
+/* ============ lectura de catálogos (Google Sites) ============ */
+const PROXIES = [
+  u => "/.netlify/functions/catalogo?u=" + encodeURIComponent(u),
+  u => "https://api.allorigins.win/raw?url=" + encodeURIComponent(u),
+  u => "https://corsproxy.io/?url=" + encodeURIComponent(u),
+  u => "https://api.codetabs.com/v1/proxy/?quest=" + encodeURIComponent(u)
+];
+
+async function traerHTML(url){
+  const key = "mm_cat_" + url;
+  try{
+    const c = JSON.parse(localStorage.getItem(key) || "null");
+    if(c && Date.now() - c.t < 6*3600e3) return c.h;
+  }catch(e){}
+  for(const p of PROXIES){
+    try{
+      const ctl = new AbortController(); const to = setTimeout(()=>ctl.abort(), 12000);
+      const r = await fetch(p(url), { signal: ctl.signal }); clearTimeout(to);
+      if(!r.ok) continue;
+      const h = await r.text();
+      if(!h.includes("sitesv-images-rt") && !h.includes("googleusercontent")) continue;
+      try{ localStorage.setItem(key, JSON.stringify({t:Date.now(), h})); }catch(e){}
+      return h;
+    }catch(e){}
+  }
+  return null;
+}
+
+/* Recorre la página en orden: textos e imágenes */
+function eventos(html){
+  const doc = new DOMParser().parseFromString(html, "text/html");
+  doc.querySelectorAll("script,style,noscript,header,nav,footer").forEach(n => n.remove());
+  const out = []; const vistos = new Set();
+  const walker = doc.createTreeWalker(doc.body, NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_TEXT);
+  let n;
+  while((n = walker.nextNode())){
+    if(n.nodeType === 3){
+      const t = n.textContent.replace(/\s+/g," ").trim();
+      if(t.length > 1) out.push({ k:"t", v:t });
+    } else if(n.tagName === "IMG"){
+      let src = n.getAttribute("src") || n.getAttribute("data-src") || "";
+      if(!/sitesv-images-rt|googleusercontent/.test(src)) continue;
+      if(src.startsWith("//")) src = "https:" + src;
+      const base = src.split("=")[0];
+      if(vistos.has(base)) continue;
+      vistos.add(base);
+      out.push({ k:"i", v: base + "=w1000" });
+    }
+  }
+  return out;
+}
+
+/* Osos nacionales: el título "TAMAÑO X" va ANTES de sus fotos */
+function parseNacional(html){
+  const ev = eventos(html); const grupos = {}; let actual = null;
+  for(const e of ev){
+    if(e.k === "t" && /tama[ñn]o/i.test(e.v)){ const cm = tallaDesdeTexto(e.v); if(cm) actual = cm; }
+    else if(e.k === "i" && actual){ (grupos[actual] ||= []).push(e.v); }
+  }
+  return grupos;
+}
+
+/* Importados: el texto con tamaño/precio va DESPUÉS de la foto */
+function parseImportado(html, col){
+  const ev = eventos(html); const items = []; let last = null;
+  for(const e of ev){
+    if(e.k === "i"){ last = { img:e.v, col, cm:null, precio:null }; items.push(last); }
+    else if(last){
+      const cm = tallaDesdeTexto(e.v); const p = precioDesdeTexto(e.v);
+      if(cm && !last.cm) last.cm = cm;
+      if(p && !last.precio) last.precio = p;
+      if(/maleta|cobija/i.test(e.v)) last.extra = "Maleta-cobija";
+    }
+  }
+  // La primera foto suele ser la portada repetida del sitio
+  return items;
+}
+
+/* ===================== render ===================== */
+let catalogo = { nac:{}, imp:[] };
+
+function cardHTML(it, i){
+  const priceTxt = it.precio ? cop(it.precio) : "Precio a confirmar";
+  return `<article class="card">
+    <div class="studio" data-view="${esc(it.img)}">
+      ${it.tag ? `<span class="tag">${esc(it.tag)}</span>` : ""}
+      <img loading="lazy" referrerpolicy="no-referrer" src="${esc(it.img)}" alt="${esc(it.nombre)}" onerror="this.closest('.card').remove()">
+    </div>
+    <div class="body">
+      <h4>${esc(it.nombre)}</h4>
+      <p class="desc">${esc(it.desc)}</p>
+      <div class="row">
+        <span class="price ${it.precio ? "" : "ask"}">${priceTxt}</span>
+        <button class="btn btn-dark" data-buy="${i}">Lo quiero</button>
+      </div>
+    </div>
+  </article>`;
+}
+
+let productos = [];   // índice global para los botones
+
+function renderNacional(){
+  const cont = $("#nacionales"); const tallasCon = Object.keys(catalogo.nac).map(Number).sort((a,b)=>a-b);
+  const propios = misPeluches("nacionales");
+  if(!tallasCon.length && !propios.length){
+    cont.innerHTML = `<div class="notice">Estamos actualizando la galería. Escríbenos por WhatsApp y te mostramos todos los modelos 🧸<br><br><a class="btn btn-wa" href="${waLink("Hola, quiero ver los modelos de osos nacionales 🧸")}" target="_blank" rel="noopener">Ver modelos por WhatsApp</a></div>`;
+    return;
+  }
+  let html = ""; let n = 1;
+  if(propios.length){
+    html += `<div class="size-title" id="tnuevos"><h3>Nuevos <i>modelos</i></h3><span></span></div><div class="grid">`;
+    propios.forEach(it => { productos.push(it); html += cardHTML(it, productos.length - 1); });
+    html += `</div>`;
+  }
+  $("#sizeTabs").innerHTML = (propios.length ? `<button class="tab" data-go="tnuevos">Nuevos</button>` : "") + tallasCon.map(cm => `<button class="tab" data-go="t${cm}">${nombreTalla(cm)}</button>`).join("");
+  for(const cm of tallasCon){
+    const t = TALLAS.find(x => x.cm === cm);
+    html += `<div class="size-title" id="t${cm}"><h3>Osos de <i>${nombreTalla(cm)}</i></h3><span>${t ? cop(t.p) : ""}</span></div><div class="grid">`;
+    catalogo.nac[cm].forEach(img => {
+      const it = { img, tipo:"nacional", cm, precio: t ? t.p : null, nombre:`Oso Nacional Nº ${String(n).padStart(2,"0")}`, desc: DESCS[n % DESCS.length], tag: nombreTalla(cm) };
+      n++; productos.push(it); html += cardHTML(it, productos.length - 1);
+    });
+    html += `</div>`;
+  }
+  cont.innerHTML = html;
+}
+
+let impFiltro = "all", impVisibles = 48;
+function renderImportados(){
+  const grid = $("#importadosGrid");
+  const lista = catalogo.imp.filter(x => impFiltro === "all" || String(x.col) === impFiltro);
+  if(!lista.length){
+    grid.innerHTML = `<div class="notice" style="grid-column:1/-1">Estamos actualizando esta colección. <a href="${waLink("Hola, quiero ver los personajes importados 🧸")}" target="_blank" rel="noopener">Pídenos el catálogo por WhatsApp</a>.</div>`;
+    $("#moreImp").hidden = true; return;
+  }
+  grid.innerHTML = lista.slice(0, impVisibles).map(it => cardHTML(it, it.idx)).join("");
+  $("#moreImp").hidden = lista.length <= impVisibles;
+  $("#moreImp").textContent = `Ver más personajes (${lista.length - Math.min(impVisibles, lista.length)} más)`;
+  const cuenta = c => catalogo.imp.filter(x => c === "all" || String(x.col) === c).length;
+  document.querySelectorAll("[data-imp]").forEach(b => { b.textContent = (b.dataset.imp === "all" ? "Todos" : "Colección " + (b.dataset.imp === "1" ? "I" : "II")) + ` (${cuenta(b.dataset.imp)})`; });
+}
+
+function misPeluches(seccion){
+  const lista = (typeof MIS_PELUCHES !== "undefined" && Array.isArray(MIS_PELUCHES)) ? MIS_PELUCHES : [];
+  return lista.filter(x => x && x.foto && (x.seccion || "importados") === seccion).map(x => {
+    const cm = tallaDesdeTexto(x.tamano || "");
+    return { manual:true, img:x.foto, tipo: seccion === "nacionales" ? "nacional" : "importado", col: +x.coleccion || 1,
+      cm, precio: +x.precio || null, nombre: x.nombre || "Peluche", desc: x.descripcion || "Suave, hermoso y listo para regalar.",
+      tag: x.tamano || (seccion === "nacionales" ? "Nuevo" : `Colección ${(+x.coleccion || 1) === 2 ? "II" : "I"}`) };
+  });
+}
+
+function prepararImportados(){
+  let n = 1;
+  catalogo.imp = misPeluches("importados").concat(catalogo.imp);
+  catalogo.imp.forEach(it => {
+    if(it.manual){ productos.push(it); it.idx = productos.length - 1; return; }
+    it.tipo = "importado";
+    it.precio = it.precio ? it.precio + CONFIG.PRECIO_EXTRA : null;
+    it.nombre = `${it.extra ? it.extra : "Personaje"} Nº ${String(n).padStart(2,"0")}`;
+    it.desc = it.cm ? `Personaje importado de ${nombreTalla(it.cm)}, suave y de excelente calidad.` : "Personaje importado, suave y de excelente calidad. Disponible en varios tamaños.";
+    it.tag = it.cm ? nombreTalla(it.cm) : `Colección ${it.col === 1 ? "I" : "II"}`;
+    n++; productos.push(it); it.idx = productos.length - 1;
+  });
+}
+
+function heroSlideshow(){
+  const imgs = [].concat(...Object.values(catalogo.nac)).slice(0, 12);
+  if(!imgs.length) return;
+  const box = $("#heroArt"); let i = 0;
+  const el = document.createElement("img"); el.referrerPolicy = "no-referrer"; el.alt = "Oso de peluche";
+  box.prepend(el);
+  const show = () => { el.classList.remove("on"); setTimeout(()=>{ el.src = imgs[i++ % imgs.length]; }, 350); };
+  el.onload = () => el.classList.add("on");
+  show(); setInterval(show, 4200);
+}
+
+/* ===================== modal de pedido ===================== */
+let actual = null;
+function abrir(idx){
+  actual = productos[idx]; const it = actual;
+  $("#mImg").src = it.img; $("#mTitle").textContent = it.nombre;
+  $("#mEyebrow").textContent = it.tipo === "nacional" ? "Oso nacional" : "Personaje importado";
+  const sel = $("#fSize"), free = $("#fSizeFree");
+  if(it.tipo === "nacional"){
+    sel.style.display = ""; free.style.display = "none";
+    sel.innerHTML = TALLAS.map(t => `<option value="${t.cm}" ${t.cm===it.cm?"selected":""}>${t.t} — ${cop(t.p)}</option>`).join("");
+  } else if(it.cm){
+    sel.style.display = ""; free.style.display = "none";
+    sel.innerHTML = `<option value="${it.cm}">${nombreTalla(it.cm)}</option><option value="otro">Otro tamaño (consultar)</option>`;
+  } else {
+    sel.style.display = "none"; free.style.display = ""; free.value = "";
+  }
+  actualizarPrecio();
+  $("#modal").classList.add("open"); $("#modal").setAttribute("aria-hidden","false");
+  document.body.style.overflow = "hidden";
+}
+function cerrar(){ $("#modal").classList.remove("open"); $("#modal").setAttribute("aria-hidden","true"); document.body.style.overflow = ""; $("#mErr").style.display="none"; }
+function precioActual(){
+  if(!actual) return null;
+  if(actual.tipo === "nacional"){ const t = TALLAS.find(x => x.cm === +$("#fSize").value); return t ? t.p : null; }
+  if($("#fSize").value === "otro") return null;
+  return actual.precio;
+}
+function tallaActual(){
+  if($("#fSize").style.display === "none") return $("#fSizeFree").value.trim() || "Por confirmar";
+  const v = $("#fSize").value; return v === "otro" ? "Otro tamaño (consultar)" : nombreTalla(+v);
+}
+function actualizarPrecio(){
+  const p = precioActual(); const q = Math.max(1, parseInt($("#fQty").value || "1", 10));
+  $("#mPrice").textContent = p ? cop(p * q) : "A confirmar";
+  $("#mPrice").classList.toggle("ask", !p);
+  const es240 = actual && actual.tipo === "nacional" && +$("#fSize").value === 240;
+  $("#mAbono").innerHTML = es240 ? "<br>⭐ El oso de <b>2,40 m</b> requiere un <b>abono de $50.000</b> por adelantado." : "";
+}
+
+function enviar(e){
+  e.preventDefault();
+  const req = ["#fName","#fId","#fPhone","#fDep","#fCity","#fAddr"];
+  const falta = req.filter(s => !$(s).value.trim());
+  const pago = document.querySelector('input[name="pago"]:checked');
+  if(falta.length || !pago){
+    $("#mErr").textContent = "Por favor completa los campos con * y elige cómo pagarás el envío.";
+    $("#mErr").style.display = "block"; (falta[0] ? $(falta[0]) : $("#fPays")).scrollIntoView({behavior:"smooth",block:"center"}); return;
+  }
+  const q = Math.max(1, parseInt($("#fQty").value || "1", 10));
+  const p = precioActual();
+  const msg =
+`🧸 *NUEVO PEDIDO — Maison Peluches Oso*
+
+*Peluche:* ${actual.nombre} (${actual.tipo === "nacional" ? "Oso nacional" : "Importado"})
+*Tamaño:* ${tallaActual()}
+*Cantidad:* ${q}
+*Valor peluche:* ${p ? cop(p*q) : "Por confirmar"}
+*Foto:* ${actual.img}
+${$("#fNotes").value.trim() ? "*Indicaciones:* " + $("#fNotes").value.trim() + "\n" : ""}
+📦 *DATOS DE ENVÍO*
+*Nombre:* ${$("#fName").value.trim()}
+*Cédula:* ${$("#fId").value.trim()}
+*Celular:* ${$("#fPhone").value.trim()}
+*Departamento:* ${$("#fDep").value}
+*Ciudad:* ${$("#fCity").value.trim()}
+*Dirección:* ${$("#fAddr").value.trim()}${$("#fHood").value.trim() ? "\n*Barrio:* " + $("#fHood").value.trim() : ""}
+
+💳 *Pago del envío:* Bre-B ${CONFIG.llaveBreB} (${CONFIG.titular}) desde ${pago.value}
+🚚 Envío por Interrapidísimo. Entiendo que pago el envío por adelantado y el valor del peluche al recibir.`;
+  window.open(waLink(msg), "_blank", "noopener");
+}
+
+/* ===================== inicio ===================== */
+function init(){
+  $("#fab").href = waLink("Hola Maison Peluches Oso 🧸 quiero información sobre los peluches");
+  $("#priceChips").innerHTML = TALLAS.map(t => `<div class="price-chip" data-go="t${t.cm}"><small>${t.t}</small><b>${cop(t.p)}</b></div>`).join("");
+  $("#payList").innerHTML = ["Bre-B", ...CONFIG.metodosPago].map(m => `<span>${esc(m)}</span>`).join("");
+  document.querySelectorAll(".llave").forEach(e => e.textContent = CONFIG.llaveBreB);
+  document.querySelectorAll(".titular").forEach(e => e.textContent = CONFIG.titular);
+  $("#fPays").innerHTML = CONFIG.metodosPago.map((m,i) => `<label><input type="radio" name="pago" value="${esc(m)}" ${i===0?"checked":""}><span>${esc(m)}</span></label>`).join("");
+  $("#fDep").innerHTML = `<option value="">Selecciona…</option>` + DEPTOS.map(d => `<option>${d}</option>`).join("");
+
+  document.addEventListener("click", e => {
+    const cp = e.target.closest("[data-copy]");
+    if(cp){ const t = CONFIG.llaveBreB; (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(()=>{cp.textContent="¡Copiada! ✓"; setTimeout(()=>cp.textContent="Copiar llave",1800);}).catch(()=>prompt("Copia la llave:", t)); return; }
+    const b = e.target.closest("[data-buy]"); if(b){ abrir(+b.dataset.buy); return; }
+    const g = e.target.closest("[data-go]");
+    if(g){
+      const el = document.getElementById(g.dataset.go);
+      if(el) el.scrollIntoView({behavior:"smooth"});
+      else window.open(waLink(`Hola, quiero ver los modelos de oso de ${g.querySelector("small")?.textContent || ""} 🧸`), "_blank", "noopener");
+      return;
+    }
+    const v = e.target.closest("[data-view]"); if(v){ $("#vImg").src = v.dataset.view; $("#viewer").classList.add("open"); return; }
+    if(e.target.id === "viewer" || e.target.id === "vImg") $("#viewer").classList.remove("open");
+    if(e.target.id === "modal") cerrar();
+    const it = e.target.closest("[data-imp]");
+    if(it){ document.querySelectorAll("[data-imp]").forEach(x => x.classList.toggle("on", x === it)); impFiltro = it.dataset.imp; impVisibles = 48; renderImportados(); }
+  });
+  $("#mClose").onclick = cerrar;
+  document.addEventListener("keydown", e => { if(e.key === "Escape"){ cerrar(); $("#viewer").classList.remove("open"); } });
+  $("#fSize").onchange = actualizarPrecio; $("#fQty").oninput = actualizarPrecio;
+  $("#orderForm").onsubmit = enviar;
+  $("#moreImp").onclick = () => { impVisibles += 24; renderImportados(); };
+
+  cargar();
+}
+
+async function cargar(){
+  try{
+    const r = await fetch("catalogo.json", { cache: "no-cache" });
+    if(r.ok){
+      const d = await r.json();
+      if(d && (Object.keys(d.nac || {}).length || (d.imp || []).length)){
+        catalogo.nac = d.nac || {}; catalogo.imp = d.imp || [];
+        renderNacional(); prepararImportados(); renderImportados(); heroSlideshow(); return;
+      }
+    }
+  }catch(e){}
+  const [hN, h1, h2] = await Promise.all([traerHTML(CATALOGOS.nacional), traerHTML(CATALOGOS.imp1), traerHTML(CATALOGOS.imp2)]);
+  if(hN) catalogo.nac = parseNacional(hN);
+  catalogo.imp = [].concat(h1 ? parseImportado(h1, 1) : [], h2 ? parseImportado(h2, 2) : []);
+  renderNacional(); prepararImportados(); renderImportados(); heroSlideshow();
+}
+
+init();
+</script>
+</body>
+</html>
