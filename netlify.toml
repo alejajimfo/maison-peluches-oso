@@ -1,4 +1,4 @@
 [build]
   publish = "."
-  command = "node scripts/build-catalogo.mjs"
+  command = "node build-catalogo.mjs || echo 'Sin catalogo: la pagina leera los catalogos en vivo'"
   functions = "netlify/functions"
